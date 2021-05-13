@@ -1,5 +1,6 @@
 package step;
 
+import org.openqa.selenium.WebDriver;
 import page.AuthenticationPage;
 import page.CreateAnAccountPage;
 import page.MyAccountPage;

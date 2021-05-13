@@ -18,7 +18,7 @@ public class AuthenticationPage extends AuthenticationMap{
 
     public void digiteEmailValido(){
 
-        TxtEmail.sendKeys("dsadasdsa@uorak.com");
+        TxtEmail.sendKeys("nani@uorak.com");
     }
 
     public void cliqueNoBotaoLogarHome() {

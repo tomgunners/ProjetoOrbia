@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features="src/test/java/feature",
-        glue= {""},
+        features = "src/test/java/feature",
+        glue = "step",
         monochrome = true,
         snippets = SnippetType.CAMELCASE,
         dryRun = false

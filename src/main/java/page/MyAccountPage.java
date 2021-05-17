@@ -1,22 +1,23 @@
 package page;
 
 import map.MyAccountMap;
-import org.junit.Assert;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
 
 public class MyAccountPage extends MyAccountMap {
 
-    public void validaPaginaMyAccount() {
-        String LblMyAccount = lblMyAccount.getText();
-        Assert.assertEquals("MY ACCOUNT", LblMyAccount);
+    public MyAccountPage(WebDriver driver) {
+        super(driver);
     }
 
-    public WebElement getTitleDresses() {
-        return titleDresses;
-    }
+    public void interageMenu(WebDriver driver) {
 
-    public WebElement getTitleEveningDresses() {
-        return titleEveningDresses;
+        Actions act = new Actions(driver);
+        act.moveToElement(MnDresses)
+                .moveToElement(MnEveningDresses)
+                .click()
+                .build()
+                .perform();
     }
-
 }

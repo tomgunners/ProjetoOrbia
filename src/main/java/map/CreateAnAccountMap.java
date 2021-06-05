@@ -43,6 +43,9 @@ public class CreateAnAccountMap {
 
     //YOUR ADDRESS
 
+    @FindBy(id = "days")
+    protected WebElement selectDateBirth;
+
     @FindBy(id = "company")
     protected WebElement TxtCompany;
 
@@ -53,7 +56,10 @@ public class CreateAnAccountMap {
     protected WebElement TxtCity;
 
     @FindBy(id = "id_state")
-    protected WebElement CmbState;
+    protected WebElement SelectState;
+
+    @FindBy(id = "id_country")
+    protected WebElement SelectCountry;
 
     @FindBy(id = "postcode")
     protected WebElement TxtZipCode;

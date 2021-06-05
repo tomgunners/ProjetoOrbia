@@ -2,6 +2,7 @@ package page;
 
 import map.AuthenticationMap;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 public class AuthenticationPage extends AuthenticationMap {
 
@@ -10,8 +11,8 @@ public class AuthenticationPage extends AuthenticationMap {
         Assert.assertEquals("AUTHENTICATION", MsgAuthentication);
     }
 
-    public void digiteEmailValido() {
-        TxtEmail.sendKeys("welzao@uorak.com");
+    public WebElement getInputEmailCreate() {
+        return TxtEmail;
     }
 
     public void cliqueNoBotaoLogarHome() {

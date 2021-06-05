@@ -24,14 +24,14 @@ public class Base {
         driver.manage().window().maximize();
         driver.navigate().to("http://automationpractice.com/index.php?controller=authentication&back=my-account");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 20);
+        //wait = new WebDriverWait(driver, 30);
     }
 
     //CONSTRUTOR RESPONSÁVEL POR FECHAR O NAVEGADOR
-    @After
-    public void teardown() {
+    //@After
+    /*public void teardown() {
         driver.quit();
-    }
+    }*/
 
     //CONSTRUTOR QUE RECEBE DE VOLTA O DRIVER
     public static WebDriver getDriver() {

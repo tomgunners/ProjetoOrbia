@@ -1,90 +1,74 @@
 package page;
 
-import commons.RandomPasswordGenerator;
 import map.CreateAnAccountMap;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.WebElement;
 
 public class CreateAnAccountPage extends CreateAnAccountMap {
-
-    RandomPasswordGenerator passGen = new RandomPasswordGenerator();
-    String password = passGen.generatePassayPassword();
 
     public void validaPaginaAutenticacao() {
         String TitleCreateAnAccount = TitleCreateAccount.getText();
         Assert.assertEquals("YOUR PERSONAL INFORMATION", TitleCreateAnAccount);
     }
 
-    public void mrs() {
-        RdbMr.click();
+
+    public WebElement getRdMr() {
+        return RdbMr;
     }
 
-    public void firstName() {
-        TxtFindName.sendKeys("Teste");
+    public WebElement getInputFirstName() {
+        return TxtFindName;
     }
 
-    public void lastName() {
-        TxtLastName.sendKeys("Teste");
+    public WebElement getInputLastName() {
+        return TxtLastName;
     }
 
-    /*public void email() {
-        TxtEmail.sendKeys("yamilei1013@uorak.com");
-    }*/
-
-    public void password() {
-        TxtPassword.sendKeys(password);
-        System.out.println("Senha Cadastrada:" + password);
+    public WebElement getCompany(){
+        return TxtCompany;
     }
 
-    public void dateOfBith() {
-        Select days = new Select(CmbDays);
-        days.selectByValue("13");
-
-        Select months = new Select(CmbMonths);
-        months.selectByValue("4");
-
-        Select years = new Select(CmbYears);
-        years.selectByValue("1990");
+    public WebElement getInputPostalCode() {
+        return TxtZipCode;
     }
 
-    public void company() {
-        TxtCompany.sendKeys("Orbia");
+    public WebElement getInputPassword() {
+        return TxtPassword;
     }
 
-    public void address() {
-        TxtAddress.sendKeys("1520 Pooz Street");
+    public WebElement getSelectDateBirth() {
+        return selectDateBirth;
     }
 
-    public void city() {
-        TxtCity.sendKeys("New York");
+    public WebElement getInputAddress() {
+        return TxtAddress;
     }
 
-    public void state() {
-        Select state = new Select(CmbState);
-        state.selectByValue("32");
+    public WebElement getInputCity() {
+        return TxtCity;
     }
 
-    public void zipCode() {
-        TxtZipCode.sendKeys("94232");
+    public WebElement getSelectState() {
+        return SelectState;
     }
 
-    public void additionalInformation() {
-        TxtAdditionalInformation.sendKeys("Automacao de Teste Orbia");
+    public WebElement getSelectCountry() {
+        return SelectCountry;
     }
 
-    public void homePhone() {
-        TxtHomePhone.sendKeys("732-223-6870");
+    public WebElement getInputHomePhone() {
+        return TxtHomePhone;
     }
 
-    public void mobilePhone() {
-        TxtMobilePhone.sendKeys("732-223-6870");
+    public WebElement getInputPhone() {
+        return TxtMobilePhone;
     }
 
-    public void secondAddress() {
-        TxtSecondAddress.sendKeys("essaadia8713@uorak.com");
+    public WebElement getInputAddressAlias() {
+        return TxtSecondAddress;
     }
 
-    public void register() {
-        BtnRegister.click();
+    public WebElement getRegister() {
+        return BtnRegister;
     }
 }

@@ -1,0 +1,93 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6576184200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Base.setupTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Deve criar uma conta",
+        "description": "",
+        "id": "criar-uma-conta;deve-criar-uma-conta",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 366902200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que estou na tela de pré cadastro",
+            "match": {
+              "location": "CriarContaSteps.que_estou_na_tela_de_pré_cadastro()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 301335800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "insiro um email valido",
+            "match": {
+              "location": "CriarContaSteps.insiro_um_email_valido()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1258790900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "redirecionar para a tela seguinte",
+            "match": {
+              "location": "CriarContaSteps.redirecionar_para_a_tela_seguinte()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3818498200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "preencho as informações pessoais",
+            "match": {
+              "location": "CriarContaSteps.preencho_as_informações_pessoais()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33423000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "devo ser redirecionado para a tela My Account",
+            "match": {
+              "location": "CriarContaSteps.devo_ser_redirecionado_para_a_tela_My_Account()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Criar uma Conta",
+    "description": "\r\n· Eu como usuário, preciso criar uma conta no site para realizar uma compra",
+    "id": "criar-uma-conta",
+    "keyword": "Feature",
+    "uri": "cria_conta.feature"
+  }
+]

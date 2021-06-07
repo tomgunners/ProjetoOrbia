@@ -11,7 +11,7 @@ public class CreateAnAccountMap {
         PageFactory.initElements(Base.getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[@id=\"account-creation_form\"]/div[1]/h3")
+    @FindBy(xpath = "//*[@id='account-creation_form']/div[1]/h3")
     protected WebElement TitleCreateAccount;
 
     @FindBy(id = "id_gender1")

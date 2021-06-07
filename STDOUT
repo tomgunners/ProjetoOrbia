@@ -1,0 +1,30 @@
+Feature: Avalia Produto
+  
+  · Eu como comprador da loja, desejo fazer uma avaliação dos vestidos comprados
+
+  Scenario: Deve Avalia Produto                 # avalia_produto.feature:5
+    Given que insiro os dados de login corretos # AvaliaProdutoSteps.que_insiro_os_dados_de_login_corretos()
+    And navego para o menu Evening Dresses      # AvaliaProdutoSteps.navego_para_o_menu_Evening_Dresses()
+    When selecionar o vestido                   # AvaliaProdutoSteps.selecionar_o_vestido()
+    And avaliar o produto                       # AvaliaProdutoSteps.avaliar_o_produto()
+    Then envio a avaliacao                      # AvaliaProdutoSteps.envio_a_avaliacao()
+Feature: Criar uma Conta
+  
+  · Eu como usuário, preciso criar uma conta no site para realizar uma compra
+
+  Scenario: Deve criar uma conta                      # cria_conta.feature:5
+    Given que estou na tela de pré cadastro           # CriarContaSteps.que_estou_na_tela_de_pré_cadastro()
+    And insiro um email valido                        # CriarContaSteps.insiro_um_email_valido()
+    When redirecionar para a tela seguinte            # CriarContaSteps.redirecionar_para_a_tela_seguinte()
+    Then preencho as informações pessoais             # CriarContaSteps.preencho_as_informações_pessoais()
+    And devo ser redirecionado para a tela My Account # CriarContaSteps.devo_ser_redirecionado_para_a_tela_My_Account()
+Feature: Realiza Compra
+  
+  · Eu como usuário logado, desejo realizar uma compra de dois vestidos na loja
+
+  Scenario: Realiza Compra                                   # realiza_compra.feature:5
+    Given que estou na tela de login                         # RealizaCompraSteps.que_estou_na_tela_de_login()
+    And insiro os dados de login corretos                    # RealizaCompraSteps.insiro_os_dados_de_login_corretos()
+    When navegar para o menu Evening Dresses                 # RealizaCompraSteps.navegar_para_o_menu_Evening_Dresses()
+    And selecionar o vestido com cores e tamanhos diferentes # RealizaCompraSteps.selecionar_o_vestido_com_cores_e_tamanhos_diferentes()
+    Then vou finalizar o pedido                              # RealizaCompraSteps.vou_finalizar_o_pedido()

@@ -11,12 +11,24 @@ public class AuthenticationMap {
         PageFactory.initElements(Base.getDriver(), this);
     }
 
+    // CREATE AN ACCOUNT
+
     @FindBy(xpath = "//*[@id='center_column']/h1")
     protected WebElement TitleAuthentication;
 
     @FindBy(id = "email_create")
-    protected WebElement TxtEmail;
+    protected WebElement TxtEmailCreate;
 
     @FindBy(id = "SubmitCreate")
     protected WebElement BtnCreateAnAccount;
+
+    //ALREADY REGISTERED?
+    @FindBy(id = "email")
+    protected WebElement TxtEmail;
+
+    @FindBy(id = "passwd")
+    protected WebElement Txtpasswd;
+
+    @FindBy(id = "SubmitLogin")
+    protected WebElement BtnSubmitLogin;
 }

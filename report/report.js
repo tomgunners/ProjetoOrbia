@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5752140700,
+  "duration": 9991350100,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,35 +47,35 @@ formatter.match({
   "location": "AvaliaProdutoSteps.que_insiro_os_dados_de_login_corretos()"
 });
 formatter.result({
-  "duration": 2047131900,
+  "duration": 10314215200,
   "status": "passed"
 });
 formatter.match({
   "location": "AvaliaProdutoSteps.navego_para_o_menu_Evening_Dresses()"
 });
 formatter.result({
-  "duration": 2262138500,
+  "duration": 7594243300,
   "status": "passed"
 });
 formatter.match({
   "location": "AvaliaProdutoSteps.selecionar_o_vestido()"
 });
 formatter.result({
-  "duration": 1604028600,
+  "duration": 8504706000,
   "status": "passed"
 });
 formatter.match({
   "location": "AvaliaProdutoSteps.avaliar_o_produto()"
 });
 formatter.result({
-  "duration": 336937900,
+  "duration": 316628900,
   "status": "passed"
 });
 formatter.match({
   "location": "AvaliaProdutoSteps.envio_a_avaliacao()"
 });
 formatter.result({
-  "duration": 2554278400,
+  "duration": 14306863600,
   "status": "passed"
 });
 formatter.uri("cria_conta.feature");
@@ -87,7 +87,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5483034900,
+  "duration": 5572666300,
   "status": "passed"
 });
 formatter.scenario({
@@ -127,35 +127,35 @@ formatter.match({
   "location": "CriarContaSteps.que_estou_na_tela_de_pré_cadastro()"
 });
 formatter.result({
-  "duration": 312752900,
+  "duration": 192482300,
   "status": "passed"
 });
 formatter.match({
   "location": "CriarContaSteps.insiro_um_email_valido()"
 });
 formatter.result({
-  "duration": 158640100,
+  "duration": 168666800,
   "status": "passed"
 });
 formatter.match({
   "location": "CriarContaSteps.redirecionar_para_a_tela_seguinte()"
 });
 formatter.result({
-  "duration": 1765653500,
+  "duration": 3973995900,
   "status": "passed"
 });
 formatter.match({
   "location": "CriarContaSteps.preencho_as_informações_pessoais()"
 });
 formatter.result({
-  "duration": 3365856600,
+  "duration": 8041582000,
   "status": "passed"
 });
 formatter.match({
   "location": "CriarContaSteps.devo_ser_redirecionado_para_a_tela_My_Account()"
 });
 formatter.result({
-  "duration": 33282600,
+  "duration": 26890600,
   "status": "passed"
 });
 formatter.uri("realiza_compra.feature");
@@ -167,7 +167,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 6634819500,
+  "duration": 8230105200,
   "status": "passed"
 });
 formatter.scenario({
@@ -207,35 +207,35 @@ formatter.match({
   "location": "RealizaCompraSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 33505200,
+  "duration": 32780300,
   "status": "passed"
 });
 formatter.match({
   "location": "RealizaCompraSteps.insiro_os_dados_de_login_corretos()"
 });
 formatter.result({
-  "duration": 1791589700,
+  "duration": 4943965800,
   "status": "passed"
 });
 formatter.match({
   "location": "RealizaCompraSteps.navegar_para_o_menu_Evening_Dresses()"
 });
 formatter.result({
-  "duration": 4262754700,
+  "duration": 9421273800,
   "status": "passed"
 });
 formatter.match({
   "location": "RealizaCompraSteps.selecionar_o_vestido_com_cores_e_tamanhos_diferentes()"
 });
 formatter.result({
-  "duration": 3908200200,
+  "duration": 8828323500,
   "status": "passed"
 });
 formatter.match({
   "location": "RealizaCompraSteps.vou_finalizar_o_pedido()"
 });
 formatter.result({
-  "duration": 8543788300,
+  "duration": 45060274400,
   "status": "passed"
 });
 });

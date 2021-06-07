@@ -11,7 +11,6 @@ public class CreateAnAccountPage extends CreateAnAccountMap {
         Assert.assertEquals("YOUR PERSONAL INFORMATION", TitleCreateAnAccount);
     }
 
-
     public WebElement getRdMr() {
         return RdbMr;
     }

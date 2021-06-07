@@ -13,4 +13,12 @@ public class MyAccountPage extends MyAccountMap {
         Assert.assertEquals("MY ACCOUNT", LblMyAccount);
     }
 
+    public WebElement getTitleDresses() {
+        return titleDresses;
+    }
+
+    public WebElement getTitleEveningDresses() {
+        return titleEveningDresses;
+    }
+
 }

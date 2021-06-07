@@ -12,10 +12,22 @@ public class AuthenticationPage extends AuthenticationMap {
     }
 
     public WebElement getInputEmailCreate() {
-        return TxtEmail;
+        return TxtEmailCreate;
     }
 
     public void cliqueNoBotaoLogarHome() {
         BtnCreateAnAccount.click();
+    }
+
+    public WebElement getInputEmail(){
+        return TxtEmail;
+    }
+
+    public WebElement getInputPassWord(){
+        return Txtpasswd;
+    }
+
+    public void BtnSubmitLogin(){
+        BtnSubmitLogin.click();
     }
 }

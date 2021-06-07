@@ -13,4 +13,10 @@ public class MyAccountMap {
 
     @FindBy(xpath = "//*[@class='page-heading']")
     protected WebElement lblMyAccount;
+
+    @FindBy(xpath = "//*[@id='block_top_menu']/ul/li[2]")
+    protected WebElement titleDresses;
+
+    @FindBy(xpath = "//*[@id='block_top_menu']/ul/li[2]/ul/li[2]/a")
+    protected WebElement titleEveningDresses;
 }

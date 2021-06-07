@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="145.521014">
+<testcase classname="Avalia Produto" name="Deve Avalia Produto" time="51.028007">
+<system-out><![CDATA[Given que insiro os dados de login corretos.................................passed
+And navego para o menu Evening Dresses......................................passed
+When selecionar o vestido...................................................passed
+And avaliar o produto.......................................................passed
+Then envio a avaliacao......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Criar uma Conta" name="Deve criar uma conta" time="17.976284">
+<system-out><![CDATA[Given que estou na tela de pré cadastro.....................................passed
+And insiro um email valido..................................................passed
+When redirecionar para a tela seguinte......................................passed
+Then preencho as informações pessoais.......................................passed
+And devo ser redirecionado para a tela My Account...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Realiza Compra" name="Realiza Compra" time="76.516723">
+<system-out><![CDATA[Given que estou na tela de login............................................passed
+And insiro os dados de login corretos.......................................passed
+When navegar para o menu Evening Dresses....................................passed
+And selecionar o vestido com cores e tamanhos diferentes....................passed
+Then vou finalizar o pedido.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -14,12 +14,12 @@ import java.util.concurrent.TimeUnit;
 
 public class SeleniumRobot {
 
-    protected static WebDriver driver;
     //Variavel WAIT GLOBAL
     protected static WebDriverWait wait;
 
+
     public static void implicitlyWait(Long timeOut) {
-        driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+        Base.getDriver().manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
     }
 
     public static void selectByindex(int index, WebElement listId){
@@ -57,7 +57,7 @@ public class SeleniumRobot {
      */
     public static boolean existElementWeb(String xpath) {
 
-        return driver.findElements(By.xpath(xpath)).size() != 0;
+        return Base.getDriver().findElements(By.xpath(xpath)).size() != 0;
 
     }
 
@@ -67,7 +67,7 @@ public class SeleniumRobot {
      * @param element
      */
     public static void DoubleClickWeb(WebElement element) {
-        Actions DoubleClick = new Actions(driver);
+        Actions DoubleClick = new Actions(Base.getDriver());
         DoubleClick.doubleClick(element).perform();
     }
 
@@ -78,7 +78,7 @@ public class SeleniumRobot {
      * @param texto
      */
     public static void escrever(WebElement element, String texto) {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(Base.getDriver());
         actions.moveToElement(element);
         actions.click();
         actions.sendKeys(texto).build().perform();
@@ -90,8 +90,8 @@ public class SeleniumRobot {
      * @param element
      */
     public static void MoveToElementWeb(WebElement element) {
-        Actions MoveToElement = new Actions(driver);
-        MoveToElement.moveToElement(element).perform();
+        Actions MoveToElement = new Actions(Base.getDriver());
+        MoveToElement.moveToElement(element).build().perform();
     }
 
     public static void moveToElementLightning(WebElement element) {
@@ -102,6 +102,11 @@ public class SeleniumRobot {
     public static void moveToElementLightningTaxaPV(WebElement element) {
         int y = element.getLocation().y;
         scroll(y-900);
+    }
+
+    public static void MoveToElementWebClick(WebElement element) {
+        Actions MoveToElement = new Actions(Base.getDriver());
+        MoveToElement.moveToElement(element).click().build().perform();
     }
 
     /**
@@ -120,7 +125,7 @@ public class SeleniumRobot {
      * @return quantidade
      */
     public static int countElements(String element) {
-        return driver.findElements(By.xpath(element)).size();
+        return Base.getDriver().findElements(By.xpath(element)).size();
     }
 
     /**
@@ -150,14 +155,14 @@ public class SeleniumRobot {
      * @param rolagem
      */
     public static void scroll(int rolagem) {
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        JavascriptExecutor jse = (JavascriptExecutor) Base.getDriver();
         jse.executeScript("window.scrollBy(0," + rolagem + ")", "");
     }
 
     public static void scrollElement(String xpath){
         try {
             do {
-                ((JavascriptExecutor) driver).executeScript("window.scrollBy(" + 100 + "," + 1000 + ");");
+                ((JavascriptExecutor) Base.getDriver()).executeScript("window.scrollBy(" + 100 + "," + 1000 + ");");
                 TimeUnit.SECONDS.sleep(3);
             } while (!SeleniumRobot.existElementWeb(xpath));
 
@@ -167,11 +172,11 @@ public class SeleniumRobot {
     }
 
     public static void clicaElemento(WebElement elemento){
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) Base.getDriver();
         js.executeScript("arguments[0].click();", elemento);
     }
 
     public static void clickByText(String text){
-        driver.findElement(By.xpath("//*[text()='" +text+ "']")).click();
+        Base.getDriver().findElement(By.xpath("//*[text()='" +text+ "']")).click();
     }
 }

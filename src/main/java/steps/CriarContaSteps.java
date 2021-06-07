@@ -27,9 +27,11 @@ public class CriarContaSteps {
 
     @And("^insiro um email valido$")
     public void insiro_um_email_valido() {
-        double x = (Math.random() * ((999 - 0) + 1)) + 0;
-        this.authenticationPage.getInputEmailCreate().sendKeys(faker.internet().emailAddress()+(int)x);
+        this.authenticationPage.getInputEmailCreate().sendKeys(dataGenerator.getEmail());
+        System.out.println("Email Cadastrada:" + dataGenerator.getEmail());
+
         authenticationPage.cliqueNoBotaoLogarHome();
+
     }
 
     @When("^redirecionar para a tela seguinte$")

@@ -2,25 +2,25 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
+orbs:
+  browser-tools: circleci/browser-tools@1.1
+
 jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
-  build-and-test:  
+  build-and-test:
     # These next lines define a Docker executor: https://circleci.com/docs/2.0/executor-types/
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # Be sure to update the Docker image tag below to openjdk version of your application.
     # A list of available CircleCI Docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/openjdk
-language: java
-install: true
-jdk: oraclejdk8
-
-os: linux
-
     docker:
-      - image: rvancea/maven-chrome-jdk8:latest
+      - image: cimg/openjdk:1.14-browsers
     steps:
-      # Checkout the code as the first step.
+      - browser-tools/install-browser-tools
       - checkout
-      # Use mvn clean and package as the standard maven build phase
+      - run: |
+          node --version
+          java --version
+          google-chrome --version
       - run:
           name: Build
           command: mvn -B -DskipTests clean package

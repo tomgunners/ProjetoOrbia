@@ -9,19 +9,28 @@ jobs:
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # Be sure to update the Docker image tag below to openjdk version of your application.
     # A list of available CircleCI Docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/openjdk
+language: java
+install: true
+jdk: oraclejdk8
+
+os: linux
+
     docker:
-      - image: cimg/openjdk:11.0
+      - image: rvancea/maven-chrome-jdk8:latest
     steps:
       # Checkout the code as the first step.
       - checkout
       # Use mvn clean and package as the standard maven build phase
       - run:
-          name: Build
-          command: mvn -B -DskipTests clean package
+build:
+  stage: build
+  script:
+    - mvn compile
       # Then run your tests!
-      - run:
-          name: Test
-          command: mvn test
+test:
+  stage: test
+  script:
+    - mvn clean test
 
 workflows:
   # Below is the definition of your workflow.

@@ -19,8 +19,9 @@ import org.junit.runner.RunWith;
         tags = {"~@ignore"},
         monochrome = true,
         snippets = SnippetType.CAMELCASE,
-        dryRun = false
+        dryRun = false,
+        strict = false
 )
-public class Runner {
+public class RunnerTest {
 
 }

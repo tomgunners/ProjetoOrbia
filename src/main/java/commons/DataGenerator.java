@@ -28,7 +28,7 @@ public class DataGenerator {
         return fullName;
     }
 
-    private void setFullName(String fullName) {
+    public void setFullName(String fullName) {
         this.fullName = fullName;
     }
 
@@ -36,7 +36,7 @@ public class DataGenerator {
         return email;
     }
 
-    private void setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
@@ -44,7 +44,7 @@ public class DataGenerator {
         return telephone;
     }
 
-    private void setTelephone(String telephone) {
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
 
@@ -52,7 +52,7 @@ public class DataGenerator {
         return password;
     }
 
-    private void setPassword(String password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 

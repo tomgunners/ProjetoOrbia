@@ -16,7 +16,6 @@ public class Base {
     //Variavel WAIT GLOBAL
     protected static WebDriverWait wait;
 
-    //CONSTRUTOR RESPONSÁVEL POR INICIAR O NAVEGADOR
     @Before
     public void setupTest() {
         WebDriverManager.chromedriver().setup();
@@ -28,10 +27,10 @@ public class Base {
     }
 
     //CONSTRUTOR RESPONSÁVEL POR FECHAR O NAVEGADOR
-    //@After
-    /*public void teardown() {
+    @After
+    public void teardown() {
         driver.quit();
-    }*/
+    }
 
     //CONSTRUTOR QUE RECEBE DE VOLTA O DRIVER
     public static WebDriver getDriver() {

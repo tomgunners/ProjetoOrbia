@@ -22,15 +22,12 @@ os: linux
       - checkout
       # Use mvn clean and package as the standard maven build phase
       - run:
-build:
-  stage: build
-  script:
-    - mvn compile
+          name: Build
+          command: mvn -B -DskipTests clean package
       # Then run your tests!
-test:
-  stage: test
-  script:
-    - mvn clean test
+      - run:
+          name: Test
+          command: mvn test
 
 workflows:
   # Below is the definition of your workflow.

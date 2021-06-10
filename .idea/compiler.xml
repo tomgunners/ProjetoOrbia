@@ -9,11 +9,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OrbiaProject" />
+        <module name="ProjetoOrbia" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="OrbiaProject" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

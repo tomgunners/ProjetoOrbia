@@ -1,17 +1,17 @@
 package map;
 
-import org.openqa.selenium.WebDriver;
+import commons.Base;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CreateAnAccountMap {
 
-    public CreateAnAccountMap(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+    public CreateAnAccountMap() {
+        PageFactory.initElements(Base.getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[@id=\"account-creation_form\"]/div[1]/h3")
+    @FindBy(xpath = "//*[@id='account-creation_form']/div[1]/h3")
     protected WebElement TitleCreateAccount;
 
     @FindBy(id = "id_gender1")
@@ -43,6 +43,9 @@ public class CreateAnAccountMap {
 
     //YOUR ADDRESS
 
+    @FindBy(id = "days")
+    protected WebElement selectDateBirth;
+
     @FindBy(id = "company")
     protected WebElement TxtCompany;
 
@@ -53,7 +56,10 @@ public class CreateAnAccountMap {
     protected WebElement TxtCity;
 
     @FindBy(id = "id_state")
-    protected WebElement CmbState;
+    protected WebElement SelectState;
+
+    @FindBy(id = "id_country")
+    protected WebElement SelectCountry;
 
     @FindBy(id = "postcode")
     protected WebElement TxtZipCode;

@@ -2,25 +2,32 @@ package page;
 
 import map.AuthenticationMap;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.WebElement;
 
 public class AuthenticationPage extends AuthenticationMap {
-
-    public AuthenticationPage(WebDriver driver) {
-        super(driver);
-    }
 
     public void validaPaginaAutenticacao() {
         String MsgAuthentication = TitleAuthentication.getText();
         Assert.assertEquals("AUTHENTICATION", MsgAuthentication);
     }
 
-    public void digiteEmailValido() {
-        TxtEmail.sendKeys("nani@uorak.com");
+    public WebElement getInputEmailCreate() {
+        return TxtEmailCreate;
     }
 
     public void cliqueNoBotaoLogarHome() {
         BtnCreateAnAccount.click();
+    }
+
+    public WebElement getInputEmail() {
+        return TxtEmail;
+    }
+
+    public WebElement getInputPassWord() {
+        return Txtpasswd;
+    }
+
+    public void BtnSubmitLogin() {
+        BtnSubmitLogin.click();
     }
 }

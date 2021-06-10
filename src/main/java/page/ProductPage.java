@@ -17,11 +17,11 @@ public class ProductPage extends ProductMap {
         return selectColorPink;
     }
 
-    public WebElement btnAddToCard(){
+    public WebElement btnAddToCard() {
         return btnAddToCard;
     }
 
-    public WebElement btnReviews(){
+    public WebElement btnReviews() {
         return btnReviews;
     }
 }

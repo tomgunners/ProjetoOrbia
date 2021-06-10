@@ -11,31 +11,31 @@ public class ModalPage extends ModalMap {
         Assert.assertEquals("Product successfully added", MsgAuthentication);
     }
 
-    public WebElement getBtnContinueShopping(){
+    public WebElement getBtnContinueShopping() {
         return BtnContinueShopping;
     }
 
-    public WebElement getBtnProceedToCheckout(){
+    public WebElement getBtnProceedToCheckout() {
         return BtnProceedToCheckout;
     }
 
-    public WebElement getSelectFiveStar(){
+    public WebElement getSelectFiveStar() {
         return selectFiveStar;
     }
 
-    public WebElement getCommentTitle(){
+    public WebElement getCommentTitle() {
         return getCommentTitle;
     }
 
-    public WebElement getCommentComment(){
+    public WebElement getCommentComment() {
         return getCommentComment;
     }
 
-    public WebElement getBtnSubmitNewMessage(){
+    public WebElement getBtnSubmitNewMessage() {
         return btnSubmitNewMessage;
     }
 
-    public WebElement getTxtNewComment(){
+    public WebElement getTxtNewComment() {
         return txtNewComment;
     }
 
@@ -44,7 +44,7 @@ public class ModalPage extends ModalMap {
         Assert.assertEquals("New comment", MsgAuthentication);
     }
 
-    public WebElement getBtnOkModal(){
+    public WebElement getBtnOkModal() {
         return BtnOkModal;
     }
 }

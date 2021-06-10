@@ -6,36 +6,36 @@ import org.openqa.selenium.WebElement;
 
 public class CheckoutPage extends CheckoutMap {
 
-    public WebElement btnProceedToCheckout(){
+    public WebElement btnProceedToCheckout() {
         return BtnProceedToCheckout;
     }
 
-    public WebElement btnAddressProceedToCheckout(){
+    public WebElement btnAddressProceedToCheckout() {
         return BtnAddressProceedToCheckout;
     }
 
-    public WebElement btnShippingProceedToCheckout(){
+    public WebElement btnShippingProceedToCheckout() {
         return BtnShippingProceedToCheckout;
     }
 
-    public WebElement chkTermsOfService(){
+    public WebElement chkTermsOfService() {
         return ChkTermsOfService;
     }
 
-    public WebElement btnPayByCheck(){
+    public WebElement btnPayByCheck() {
         return BtnPayByCheck;
     }
 
-    public WebElement btnConfirmMyOrder(){
+    public WebElement btnConfirmMyOrder() {
         return BtnConfirmMyOrder;
     }
 
-    public void validaConOrderConfirmed () {
+    public void validaConOrderConfirmed() {
         String MsgAuthentication = TitleOrderConfirmation.getText();
         Assert.assertEquals("ORDER CONFIRMATION", MsgAuthentication);
     }
 
-    public WebElement btnBackToOrders(){
+    public WebElement btnBackToOrders() {
         return BtnBackToOrders;
     }
 }

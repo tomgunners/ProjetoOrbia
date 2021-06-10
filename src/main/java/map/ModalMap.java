@@ -23,13 +23,13 @@ public class ModalMap {
     @FindBy(xpath = "//*[@class='star']/a[text()='5']")
     protected WebElement selectFiveStar;
 
-    @FindBy (id = "comment_title")
+    @FindBy(id = "comment_title")
     protected WebElement getCommentTitle;
 
-    @FindBy (id = "content")
+    @FindBy(id = "content")
     protected WebElement getCommentComment;
 
-    @FindBy (id = "submitNewMessage")
+    @FindBy(id = "submitNewMessage")
     protected WebElement btnSubmitNewMessage;
 
     @FindBy(xpath = "//*[@class='fancybox-inner']/h2[text()='New comment']")

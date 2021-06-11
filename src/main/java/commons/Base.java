@@ -23,7 +23,6 @@ public class Base {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox"); //Bypass OS security model
         options.addArguments("--start-maximized");
-        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--headless");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();

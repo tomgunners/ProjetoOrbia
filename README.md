@@ -1,4 +1,4 @@
-# Projeto Automação Web With Maven ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tomgunners/ProjetoOrbia/Java%20CI%20with%20Maven?style=plastic)
+# Projeto Automação Web With Maven <img a href="https://github.com/tomgunners/ProjetoOrbia/runs/2806904966?check_suite_focus=true" src="https://img.shields.io/github/workflow/status/tomgunners/ProjetoOrbia/Java%20CI%20with%20Maven?style=plastic">
 
 ## About
  O Projeto tem como finalidade o cadastro de um usuário no aplicativo Muambator, 

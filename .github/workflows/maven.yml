@@ -19,7 +19,7 @@ jobs:
     - name: Set up JDK 11
       uses: actions/setup-java@v2
       with:
-        java-version: 'jdk1.8.0_241'
+        java-version: '8'
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn verify

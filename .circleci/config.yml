@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  browser-tools: circleci/browser-tools@x.y
+
 jobs:
   build-and-test:
   docker:

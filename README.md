@@ -44,7 +44,7 @@
 ```bash
 # Você deverá clonar o projeto para alguma pasta ou repositório local da sua maquina e depois executar o comando
 # clonando projeto do git
-$ git clone https://github.com/EtechMentoria/cucumber-rerun-example.git
+$ git clone https://github.com/tomgunners/ProjetoOrbia.git
 
 # Após clonar o projeto você precisará abrir o cmd e navegar ate a pasta do projeto
 # acesse a pasta do projeto

@@ -83,15 +83,12 @@ O arquivo que deve ser executado encontra-se:
 
 #### [IntelliJ] Para executar o projeto basta clicar com o botão direito do mouse -> Run 'RunTest'
 
-
-
-  
 ## Technologies Used
- **JDK** ![version](https://img.shields.io/badge/version-1.8-green)
+**JDK** ![version](https://img.shields.io/badge/version-1.8-green)
  
- **Maven** ![Maven Central](https://img.shields.io/maven-central/v/org.apache.maven/maven-artifact)
+**Maven** ![Maven Central](https://img.shields.io/maven-central/v/org.apache.maven/maven-artifact)
   
- **Junit** ![version](https://img.shields.io/badge/version-4.12-green)
+**Junit** ![version](https://img.shields.io/badge/version-4.12-green)
 
 **Cucumber** ![Maven Central](https://img.shields.io/maven-central/v/info.cukes/cucumber-java?label=cucumber-java)
 

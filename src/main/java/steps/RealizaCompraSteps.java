@@ -64,6 +64,6 @@ public class RealizaCompraSteps {
         this.checkoutPage.btnConfirmMyOrder().click();
         checkoutPage.validaConOrderConfirmed();
         this.checkoutPage.btnBackToOrders().click();
-        //this.orderHistoryPage.validaPagamentoComCheque();
+        this.orderHistoryPage.validaPagamentoComCheque();
     }
 }

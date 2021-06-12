@@ -49,7 +49,7 @@ public class CriarContaSteps {
         this.createAccountPage.getCompany().sendKeys("Orbia");
         this.createAccountPage.getInputAddress().sendKeys("Rua Teste");
         this.createAccountPage.getInputCity().sendKeys("São Paulo");
-//        SeleniumRobot.selectByindex(3, this.createAccountPage.getSelectState());
+        SeleniumRobot.selectByindex(3, this.createAccountPage.getSelectState());
         this.createAccountPage.getInputPostalCode().sendKeys("94232");
         SeleniumRobot.selectByindex(1, this.createAccountPage.getSelectCountry());
         this.createAccountPage.getInputHomePhone().sendKeys("1156626293");
@@ -59,6 +59,6 @@ public class CriarContaSteps {
 
     @And("^devo ser redirecionado para a tela My Account$")
     public void devo_ser_redirecionado_para_a_tela_My_Account() throws Throwable {
-        //myAccount.validaPaginaMyAccount();
+        myAccount.validaPaginaMyAccount();
     }
 }

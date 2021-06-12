@@ -20,11 +20,11 @@ public class Base {
     @Before
     public void setupTest() {
         WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions();
+        /*ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox"); //Bypass OS security model
         options.addArguments("--start-maximized");
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+        options.addArguments("--headless");*/
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.navigate().to("http://automationpractice.com/index.php?controller=authentication&back=my-account");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
